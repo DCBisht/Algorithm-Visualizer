@@ -165,17 +165,8 @@ class Sort extends Component {
                       this.setState({isRunning:false});
                   }
               }
-             /* if( i === (steps.length)-2 ){
-                  this.setState({isRunning1:false});
-                  if( this.state.isRunning2 === false ){
-                      this.setState({isRunning:false});
-                  }
-                  prevRect[steps[i].xx] = {...prevRect[steps[i].xx],isSorting:false,isSorted:true};
-                  prevRect[steps[i].yy] = {...prevRect[steps[i].yy],isSorting:false,isSorted:true};
-              }*/
               this.setState({rects:prevRect});
               await sleep(this.state.speed);
-         // },i*speed);
       }
   }
     handleSecond = async (steps) =>{

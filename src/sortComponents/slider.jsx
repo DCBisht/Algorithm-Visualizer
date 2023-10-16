@@ -30,10 +30,8 @@ export default function DiscreteSlider(props) {
                 defaultValue={props.default}
                 getAriaValueText={valuetext}
                 aria-labelledby="discrete-slider"
-                valueLabelDisplay="auto"
                 onChangeCommitted={handleChange}
                 step={props.step}
-               // marks={props.marks}
                 min={props.min}
                 max={props.max}
                 valueLabelDisplay="on"

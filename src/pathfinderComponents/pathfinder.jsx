@@ -6,7 +6,7 @@ import {dijkstra,getNodesInShortestPathOrder} from "../algorithms/dijkstra";
 import {getMaze} from "../algorithms/recursiveMaze";
 import {bfsdfs} from "../algorithms/bfs";
 import {randomMaze} from "../algorithms/randomMaze";
-import {aStar} from "../algorithms/Astar";
+// import {aStar} from "../algorithms/Astar";
 
 class Pathfinder extends Component {
     constructor() {
@@ -15,11 +15,11 @@ class Pathfinder extends Component {
             grid:[],
             mouseIsPressed:false,
             algorithms:[
-                "Dijsktra","A star","BFS","DFS"
+                "Dijsktra","BFS","DFS"
             ],
             algo:0,
             mazes:[
-                "Recursive division","Random","Recursive Horizontal bias(NA)","Recursive Vertical bias(NA)"
+                "Recursive division","Random"
             ],
             maze:0
         }
@@ -134,21 +134,7 @@ class Pathfinder extends Component {
         this.setState({grid:clearPath(grid,row,col)});
     }
     handleClick = () =>{
-      /*  for(let i = 0;i<20;i++){
-            for(let j = 0; j<50;j++){
-                document.getElementById(`node-${i}-${j}`).className = "node";
-            }
-        }*/
         this.visualizeDijkstra();
-        /*for(let i = 0;i<this.state.row;i++){
-            for(let j = 0; j<this.state.col;j++){
-                setTimeout(()=>{
-                    const newGrid = toggleVisit(this.state.grid,i,j);
-                    this.setState({grid:newGrid});
-                    //document.getElementById(`node-${i}-${j}`).className = "node node-visited";
-                },100*(i+j)+j);
-            }
-        }*/
     }
 
     visualizeDijkstra() {
@@ -161,9 +147,6 @@ class Pathfinder extends Component {
                 visitedNodesInOrder = dijkstra(grid, startNode, finishNode);
                 break;
             case 1:
-                visitedNodesInOrder = aStar(grid, startNode, finishNode);
-                break;
-            case 2:
                 visitedNodesInOrder = bfsdfs(grid, startNode, finishNode,"bfs");
                 break;
             default:
@@ -176,14 +159,10 @@ class Pathfinder extends Component {
         for (let i = 0; i <= visitedNodesInOrder.length; i++) {
 
             if (i === visitedNodesInOrder.length) {
-              //  setTimeout(() => {
                     await sleep(100);
                     await this.animateShortestPath(nodesInShortestPathOrder);
-
-              //  }, 10 * (i+10));
                 return;
             }
-           // setTimeout(() => {
                 const node = visitedNodesInOrder[i];
                 const newGrid = toggleVisit(this.state.grid,node.row,node.col);
                 //this.setState({grid:newGrid});

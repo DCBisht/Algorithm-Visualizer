@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Vertex from "./vertex";
-// import Cell from "../Turing Machine/cell";
 import Edge from "./edge";
 
 class CanvasSvg extends Component {

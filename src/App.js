@@ -21,7 +21,6 @@ class App extends Component {
         super();
     }
     componentDidMount() {
-        // console.log(window.innerHeight,"  ",window.innerWidth);
     }
 
     render() {

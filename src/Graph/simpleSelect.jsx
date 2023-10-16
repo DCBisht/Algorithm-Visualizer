@@ -28,7 +28,6 @@ const SimpleSelect = (props) => {
         setAge(event.target.value);
         props.onValueChanged(state.pos, event.target.value);
     };
-    // console.log(props.items);
     return (
         <div className="ml-2 mr-2">
             <FormControl className={classes.formControl}>

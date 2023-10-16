@@ -6,21 +6,10 @@ class Menu extends Component {
     render() {
         return (
             <nav className="nav alert-dark">
-
-
-                {/*<DiscreteSlider*/}
-                {/*    default={50}*/}
-                {/*    min={10}*/}
-                {/*    max={100}*/}
-                {/*    step={1}*/}
-                {/*    title="Speed"*/}
-                {/*    onCountChange={this.props.onSpeedChange}*/}
-                {/*    disable={false}*/}
-                {/*/>*/}
                 <SimpleSelect
                     pos={0}
                     label={'Task'}
-                    items={['Fibonacci','Binomial Coefficient',"Derangement","Bigmod","Stirling2"]}
+                    items={['Fibonacci','Binomial Coefficient']}
                     onValueChanged={this.props.setAlgo}
                 />
                 <SimpleSelect
