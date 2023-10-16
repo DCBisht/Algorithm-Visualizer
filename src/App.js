@@ -7,14 +7,11 @@ import Seive from "./primeComponents/seive";
 import Sort from "./sortComponents/sort";
 import Queen from "./queenComponents/queen";
 import ConvexHull from "./convexHullComponents/convexHull";
-import BinarySearch from "./binarySearchComponent/binarySearch";
-import RecursiveSort from "./recursiveSortComponents/recursiveSort";
-import Puzzle from "./15puzzleComponents/puzzle";
 
-import TuringMachine from "./Turing Machine/turingMachine";
+import RecursiveSort from "./recursiveSortComponents/recursiveSort";
 import Graph from "./Graph/graph";
 import About from './homeComponents/about';
-import Navbar from './pathfinderComponents/navbar';
+
 
 
 
@@ -36,10 +33,8 @@ class App extends Component {
                     <Route path='/sort' component={Sort}/>
                     <Route path='/nqueen' component={Queen}/>
                     <Route path='/convexhull' component={ConvexHull}/>
-                    <Route path='/binarysearch' component={BinarySearch}/>
                     <Route path='/recursivesort' component={RecursiveSort}/>
                     <Route path='/about' component={About}/>
-                    <Route path='/15puzzle' component={Puzzle}/>
                     <Route path='/graph' component={Graph}/>
                     <Route path='/' component={Home}/>
 

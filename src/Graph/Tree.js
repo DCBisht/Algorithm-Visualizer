@@ -1,6 +1,4 @@
 // draw tree class functions start :/
-
-
 export class Tree{
     constructor(node=0,children=[],label="") {
         this.id = 0;
@@ -66,13 +64,7 @@ export class DrawTree{
         }
         return this._lmost_sibling;
     }
-
-
 }
-
-
-
-
 export function buchheim(tree) {
     let dt = firstwalk(new DrawTree(tree))
     let min = second_walk(dt)

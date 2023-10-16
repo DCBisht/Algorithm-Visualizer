@@ -22,15 +22,14 @@ const Canvas2 = (props) => {
            }
            interval = setInterval(() => {
                let ctx1 = canvasDots.current.getContext("2d");
-              // ctx1.clearRect(0,0,canvasDimW,canvasDimH);
                ctx1.beginPath();
                ctx1.strokeStyle = "#ffffff";
                ctx1.fillStyle = "#ffffff";
-               //for( let i = 0; i <points.length;i++ ){
+               for( let i = 0; i <points.length;i++ ){
                    ctx1.moveTo(points[pos].xx, points[pos].yy);
                    ctx1.arc(points[pos].xx, points[pos].yy, 10, 0, 2 * Math.PI);
                    ctx1.fill();
-              // }
+              }
                setPos(pos => pos+1);
 
            }, 1000);

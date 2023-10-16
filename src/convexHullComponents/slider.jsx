@@ -38,7 +38,7 @@ export default function DiscreteSlider(props) {
                 marks={props.marks}
                 min={props.min}
                 max={props.max}
-                valueLabelDisplay="on"
+                // valueLabelDisplay="on"
                 disabled={props.isDisabled}
             />
         </div>

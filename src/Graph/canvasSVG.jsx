@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Vertex from "./vertex";
-import Cell from "../Turing Machine/cell";
+// import Cell from "../Turing Machine/cell";
 import Edge from "./edge";
 
 class CanvasSvg extends Component {
@@ -37,7 +37,7 @@ class CanvasSvg extends Component {
                                         x2:(edge.x2-off)*15+120,y2:edge.y2*15+10} }
                                 />
                             );
-                        })}
+                        })
                     }
                     {
                         this.props.vertices.map((vertex, cellidx) => {
@@ -52,7 +52,7 @@ class CanvasSvg extends Component {
                                         px:(vertex.px-off)*15+120,py:vertex.py*15+10} }
                                 />
                             );
-                        })}
+                        })
                     }
 
 

@@ -98,7 +98,7 @@ class Details extends Component {
                 </div>;
 
             default:
-                return <b>Henlo</b>;
+                return <b>Hello</b>;
 
         }
     }

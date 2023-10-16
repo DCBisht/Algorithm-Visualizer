@@ -2,10 +2,7 @@ import graph from "./images/graph.png";
 import primes from "./images/primes.jpg";
 import sort from "./sort.png";
 import queen from "./images/queen.PNG";
-import binSearch from "./images/binaryTree.png";
 import convex from './images/convexHull.png';
-import puzzle from './images/15puzzle.PNG';
-import turing from './images/turing.jpg';
 import Recursion from './images/Recursion.jpg';
 export function getDetails(){
    return [
@@ -45,13 +42,6 @@ export function getDetails(){
            img:queen
        },
        {
-           id:6,
-           title:"Turing Machine",
-           description:"A Turing machine is a mathematical model of computation that defines an abstract machine that manipulates symbols on a strip of tape according to a table of rules",
-           route:"/turing",
-           img:turing
-       },
-       {
            id:7,
            title:"Prime Numbers",
            description:"Visualize how Seive is better than brute force",
@@ -65,20 +55,6 @@ export function getDetails(){
            route:"/convexhull",
            img:convex
        },
-       {
-           id:9,
-           title:"Binary Search",
-           description:"Binary search is an efficient algorithm for finding an item from a sorted list of item",
-           route:"/binarysearch",
-           img:binSearch
-       },
-       {
-           id:10,
-           title:"15 Puzzle",
-           description:"The 15 puzzle is a sliding puzzle having 15 square tiles numbered 1–15 in a frame that is 4 tiles high and 4 tiles wide, leaving one unoccupied tile position",
-           route:"/15puzzle",
-           img:puzzle
-       }
-
+       
    ]
 }

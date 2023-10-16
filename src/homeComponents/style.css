@@ -13,7 +13,7 @@
     align-self: center;
     align-content: center;
     position: center;
-    child-align: middle;
+    /* child-align: middle; */
 }
 .page-footer{
     background-color: #007bff;

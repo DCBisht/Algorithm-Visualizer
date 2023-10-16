@@ -41,7 +41,6 @@ class Edge extends Component {
         let xx1 = ( x2*(l-r)+x1*r )/l;
         let yy1 = ( y2*(l-r)+y1*r )/l;
         return xx1;
-        // return xx1+","+yy1+" "+x2+","+y2;
     }
     getPolyPointsY = ()=>{
         let x1 = this.props.pos.x1;
@@ -53,7 +52,6 @@ class Edge extends Component {
         let xx1 = ( x2*(l-r)+x1*r )/l;
         let yy1 = ( y2*(l-r)+y1*r )/l;
         return yy1;
-        // return xx1+","+yy1+" "+x2+","+y2;
     }
     render() {
         return (
