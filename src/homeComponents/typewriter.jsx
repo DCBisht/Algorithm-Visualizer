@@ -7,11 +7,11 @@ class TypeWriterC extends Component {
     }
     render() {
         return (
-            <div className="type display-3">
-                <span className="badge badge-dark">
+            <div className="type display-4">
+                <span className="badge badge-dark bg-info">
                 <Typewriter
                     options={{
-                        strings: ['Graph Algorithms', 'Sorting Algorithms',"8 Queen"],
+                        strings: ['Graph Algorithms', 'Sorting Algorithms',"N Queen","Convex Hull","Recursion tree"],
                         autoStart: true,
                         loop: true,
                     }}

@@ -19,13 +19,6 @@ class Graph extends Component {
             offset:0
         }
     }
-    // setNumber = (event)=>{
-    //     let value = event.target.valueAsNumber;
-    //     if(value!== NaN && value<99)
-    //         this.setState({inputNumber:value});
-    //
-    //     // document
-    // }
     setAlgo = (pos, val) => {
         if (pos === 0) {
             // console.log("sup 0");

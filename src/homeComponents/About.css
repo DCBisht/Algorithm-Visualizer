@@ -1,0 +1,23 @@
+.about-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-container h1, h2 {
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.about-container p, li {
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-container footer {
+    margin-top: 50px;
+    color: #999;
+}
+
